@@ -14,7 +14,7 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/" component={About} />
-        <Route exact path="/dog" component={Dog} />
+        <Route exact path="/dog" render={() => <Dog name="Muffins" />} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
     </div>
